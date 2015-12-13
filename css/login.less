@@ -1,0 +1,242 @@
+@import "reset.less";
+@import "variable.less";
+@import "mixins.less";
+
+html, body {
+    height: 100%;
+}
+
+body{
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    overflow-x: hidden;
+    margin:0;
+    padding:0;
+    width:100%;
+    background-color: @color;
+}
+
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-thumb{
+    border-width:1px 1px 1px 2px;
+    border-color: @red;
+    background-color: rgba(255, 70, 70, 0.51);
+    width: 5px;
+}
+
+.container{
+    width: 70%;
+}
+
+
+//**** Header ****
+
+header{
+    height: 4em;
+    
+    img{
+        float: right;
+        margin-right: -5em;
+        margin-top: -0.5em;
+    }
+}
+
+.logo{ 
+    .abc-theatre;
+    font-size: 1.5em;
+    padding: 1em 5em 0 0;
+}
+
+.menu {
+        padding: 2em 0;
+    ul{
+        width: 100%;
+        padding: 0 12%;
+        
+        li{
+            float: left;
+            font-size: 1.3em;
+            margin: 0 3em;
+            width: 5em;
+            text-align: center;
+            border-bottom: 0.1em solid @darkgrey;
+            border-top: 0.1em solid @darkgrey;
+            padding: 0.3em 0;
+            font-weight: bold;
+            
+            
+            a{
+                color: @darkgrey;
+                text-decoration: none;
+            
+                    &:hover{
+                        color: @red;
+                    }
+            }
+            
+        }
+            
+    }
+}
+
+
+//**** Calendar ****
+
+
+#calendar {
+    text-align: center;
+    padding-right: 3.5em;
+    font-size: 1em;
+    
+    table{
+        margin: 1em 0;
+        background-color: @red;
+        width: 100%;
+        height: inherit;
+        font-size: 1.4em;
+        
+        td, tr{
+            vertical-align: middle;
+            height: 2.8em;
+        }
+        
+        
+        thead{
+            font-size: 1em;
+            
+            tr:first-child { 
+                color: white;
+                border-bottom: 2px solid @darkgrey;
+                
+                td:nth-child(2){
+                    border-right: 2px solid @darkgrey;
+                    border-left: 2px solid @darkgrey;
+                }
+            }
+            
+            tr:last-child { 
+                color: @grey;
+                font-weight: bold;
+                font-size: 0.9em;
+                height: 1em;
+                
+                td{
+                    height: 2.2em;
+                }
+            }
+                
+        }
+        
+        tbody{
+            
+            td{
+                background-color: @grey;
+                vertical-align: middle;
+                border: 2px solid lighten(@darkgrey, 40%);
+                font-weight: bold;
+                
+                &:first-child{
+                    border-left: none;
+                }
+                
+                &:last-child{
+                    border-right: none;
+                }
+                
+                &:nth-child(n+6){
+                  color: @red;
+                }
+                &.today {
+                  background-color: @red;
+                  color: @grey;
+                }
+            }
+            
+            tr:first-child{
+                td{
+                    border-top: none;
+                }
+            }
+            
+            tr:last-child{
+                td{
+                    border-bottom: none;
+                }
+            }
+        }
+    }
+}
+
+
+
+//**** Friends ****
+
+
+#friends{
+    padding: 2em 0;
+}
+
+.user {
+    padding: 0.5em 1em;
+    font-size: 1em;
+    font-weight: 900;
+    color: @red;
+    border-top: 1px solid @darkgrey;
+    
+    &:last-child{
+        border-bottom: 1px solid @darkgrey;
+            }
+    
+    ul{
+        display: inline-block;
+        margin-top: 1em;
+        vertical-align: top;
+        line-height: 1.5em;
+        margin-right: 1em;
+        
+            &:last-child{
+                padding-top: 1.5em;
+            }
+        
+        li{
+            font-size: 0.85em;
+            color: @darkgrey;
+        }
+    }
+    
+}
+
+#userPage2{
+    display: none;
+}
+
+#userPage3{
+    display: none;
+}
+
+.pages {
+    margin: 2em 0;;
+    ul{
+        width: 10em;
+        margin: 0 auto;
+        
+        li{
+            display: inline-block;
+            border-bottom: 2px solid @red;
+            border-top: 2px solid @red;
+            padding: 0.2em 0;
+            width: 1.5em;
+            text-align: center;
+            margin: 0 0.5em;
+            
+            a{
+                color: @darkgrey;
+                font-weight: bold;
+                text-decoration: none;
+            }
+            
+        }
+    }
+}
