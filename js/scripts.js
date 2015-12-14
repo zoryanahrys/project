@@ -112,6 +112,11 @@ $('#iconLogIn').click(function(){
     return false;
 	});
 
+$('#login').click(function(){
+	$('#loginForm').toggle('slow');
+    return false;
+	});
+
 $('#enterOffice').click(function(){
     if( $('#email').value.length>0 && $('#password').value.length>0 ){
         return true
@@ -119,5 +124,7 @@ $('#enterOffice').click(function(){
         return false
     }
 });
+
+
 
 
