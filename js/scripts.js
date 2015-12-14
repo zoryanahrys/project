@@ -1,3 +1,14 @@
+var http = require('http');
+var static = require('node-static');
+var file = new static.Server('.');
+
+http.createServer(function(req, res) {
+  file.serve(req, res);
+}).listen(8080);
+
+
+
+
 //*** aboutPage ***
 
 function aboutPage(){
@@ -102,3 +113,22 @@ $('.carousel').carousel({
   pause: 'hover',
     wrap: true
 });
+
+
+
+//**** login ****
+
+$('#iconLogIn').click(function(){
+	$('#loginForm').toggle('slow');
+    return false;
+	});
+
+$('#enterOffice').click(function(){
+    if( $('#email').value.length>0 && $('#password').value.length>0 ){
+        return true
+    } else{
+        return false
+    }
+});
+
+

@@ -638,3 +638,28 @@ body{
 
 
 @import "media.less";
+
+
+#loginForm {
+    display: none;
+    position: absolute;
+    top: 3.2em;
+    left: 37em;
+    width: 50%;
+    background-color:@colorMenu;
+    padding: 0 1em 1em;
+    border-bottom-left-radius: 3%;
+    border-bottom-right-radius: 3%;
+    
+    .btn-default{
+        background-color: @red;
+        border-color: @red;
+        font-weight: bold;
+        color: @grey;
+        
+        &:hover{
+            background-color: lighten(@red, 4%);
+            border-color: lighten(@red, 4%);
+        }
+    }
+}
