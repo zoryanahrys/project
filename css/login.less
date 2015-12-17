@@ -40,6 +40,12 @@ header{
         float: right;
         margin-right: -5em;
         margin-top: -0.5em;
+        border-radius: 50%;
+        border: 2px solid @darkgrey;
+        
+        &:hover{
+            border: 2px solid @red;
+        }
     }
 }
 
@@ -88,7 +94,7 @@ header{
 #calendar {
     text-align: center;
     padding-right: 3.5em;
-    font-size: 1em;
+    font-size: 1.2em;
     
     table{
         margin: 1em 0;
@@ -203,6 +209,15 @@ header{
         li{
             font-size: 0.85em;
             color: @darkgrey;
+            
+            a{
+                text-decoration: none;
+                color: @darkgrey;
+                
+                &:hover{
+                    color: @red;
+                }
+            }
         }
     }
     

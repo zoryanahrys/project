@@ -47,9 +47,8 @@ function mail (e){
               $('#subscribeForm')[0].reset();
            },2000);
           
-        } else {
+        }else{
             $('#success').css('display', 'block');
-
     }
   };
 
@@ -117,14 +116,74 @@ $('#login').click(function(){
     return false;
 	});
 
-$('#enterOffice').click(function(){
-    if( $('#email').value.length>0 && $('#password').value.length>0 ){
-        return true
+$('#users').click(function(){
+    if( $('#useremail').val().length>0 && $('#password').val().length>0){
+        
+//        if($('#email').val()==='user1@gmail.com' && $('#password').val() === 'user'){
+//            return true
+//        } else{
+//            return true
+//        }
     } else{
         return false
     }
 });
+//var users = [
+//    
+//    user1 = {
+//    
+//    name: 'Світлана',
+//    email: 'svitla@gmail.com',
+//    password: 'user'
+//},
+//
+//    user2 = {
+//        name: 'Оксана',
+//        email: 'oksi@gmail.com',
+//        password: 'user'
+//    },
+//
+//    user3 = {
+//        name: 'Марія',
+//        email: 'marig@gmail.com',
+//        password: 'user'
+//    }
+//];
+
+
+//
+
+
+function checkParams() {
+    if( $('#lastName').val().length !=0 && 
+       $('#firstName').val().length !=0 && 
+       $('#inputEmail').val().length !=0 && 
+       $('#phoneNumber').val().length !=0 && 
+       $('#postalAddress').val().length !=0
+       
+//      $('input [name="coursesRadios"]:checked').val() 
+//      $('input[name="agree"]').filter(":checked").val()
+    ){
+        $('#registrationBtn').removeAttr('disabled');
+    } else {
+        $('#registrationBtn').attr('disabled', 'disabled');
+    }
+};
+
+     
+    
+function registration(){
+    $('#registration').fadeOut();
+};
+
+function registrationOk(){
+    $('#registrationOk').fadeOut(function(){
+    document.location.reload();
+    });
+};
 
 
 
-
+ $(document).ready(function() { 
+    $("a.fancyimage").fancybox(); 
+  }); 

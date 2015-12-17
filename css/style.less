@@ -353,6 +353,11 @@ body{
         margin-left: 2.2em;
         z-index: 100;
         position: absolute;
+        
+        &:hover{
+            border: 2px solid @red;
+            border-radius: 50%;
+        }
     }
 }
 
@@ -571,7 +576,7 @@ body{
             vertical-align: top;
             margin: 2em 3em 3em 0;
             text-transform: none;
-            font-weight: normal;
+            font-weight: 500;
             border-bottom: 0.2em solid @red;
 
             h3{
@@ -663,4 +668,8 @@ body{
             border-color: lighten(@red, 4%);
         }
     }
+}
+
+#registrationOk {
+    top: 10em;
 }
