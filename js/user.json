@@ -1,0 +1,47 @@
+[
+        {
+        "name": "Світлана Підходько",
+        "img": "../img/user1.png",
+        "email": "svitla@gmail.com",
+        "town": "Львів",
+        "tel": 0986758943,
+        "vk": "",
+        "fb": ""
+        },
+        {
+        "name": "Оксана Палай",
+        "img": "../img/user2.png",
+        "email": "oksi@gmail.com",
+        "town": "Стрий",
+        "tel": 0936789045,
+        "vk": "",
+        "fb": ""
+        },
+        {
+        "name": "Марія Гультай",
+        "img": "../img/user3.png",
+        "email": "marig@gmail.com",
+        "town": "Львів",
+        "tel": 0986758943,
+        "vk": "",
+        "fb": ""
+        },
+        {
+        "name": "Таня Єногіна",
+        "img": "../img/user15.png",
+        "email": "taeno@gmail.com",
+        "town": "Львів",
+        "tel": 0935675619,
+        "vk": "",
+        "fb": ""
+        },
+        {
+        "name": "Андрій Кукурін",
+        "img": "../img/user4.png",
+        "email": "andy@gmail.com",
+        "town": "Дрогобич",
+        "tel": 0934176710,
+        "vk": "",
+        "fb": ""
+        }
+]

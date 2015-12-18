@@ -14,8 +14,10 @@
         <link href="css/login.css" rel="stylesheet" type="text/css" media="all" />
         <link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
+         <script src="js/angular.js"></script>
+         <script src="js/controllers.js"></script>
     </head>
-    <body>
+    <body ng-app="abcApp">
         <header class="container">
             <div class="row">
                <div class="col-xs-12 text-centre logo">
@@ -33,342 +35,6 @@
                </div>
             </div>
         </header>
-        <div class="container" id="friends" style="display:none;">
-            <div class="row">
-               <div class="col-xs-12 text-centre">
-                   <div id="userPage1">
-                     <div class="user" id="user1">
-                      Світлана Підходько<br>
-                       <ul>
-                           <li><img src="img/user1.png"></li>
-                           <li class="text-center">
-                               <a href="https://vk.com" target="_blank">
-                                   <img src="img/userVk.png">
-                               </a>
-                               <a href="https://www.facebook.com" target="_blank">
-                                   <img src="img/userFb.png">
-                               </a>
-                           </li>
-                       </ul>
-                       <ul>
-                           <li>Електронна пошта: <span>
-                               <a href="mailto:svitla@gmail.com">svitla@gmail.com</a></span>
-                           </li>
-                           <li>Місто: <span>Львів</span></li>
-                           <li>Телефон: <span><a href="tel:0986758943">098 675 89 43</a></span></li>
-                       </ul>
-                   </div>
-                   <div class="user" id="user2">
-                      Оксана Палай<br>
-                       <ul>
-                           <li><img src="img/user2.png"></li>
-                           <li class="text-center">
-                               <a href="https://vk.com" target="_blank">
-                                   <img src="img/userVk.png">
-                               </a>
-                               <a href="https://www.facebook.com" target="_blank">
-                                   <img src="img/userFb.png">
-                               </a>
-                           </li>
-                       </ul>
-                       <ul>
-                           <li>Електронна пошта: <span>
-                               <a href="mailto:oksi@gmail.com">oksi@gmail.com</a></span>
-                           </li>
-                           <li>Місто: <span>Стрий</span></li>
-                           <li>Телефон: <span><a href="tel:0936789045">093 678 90 45</a></span></li>
-                       </ul>
-                   </div>
-                   <div class="user" id="user3">
-                      Марія Гультай<br>
-                       <ul>
-                           <li><img src="img/user3.png"></li>
-                           <li class="text-center">
-                               <a href="https://vk.com" target="_blank">
-                                   <img src="img/userVk.png">
-                               </a>
-                               <a href="https://www.facebook.com" target="_blank">
-                                   <img src="img/userFb.png">
-                               </a>
-                           </li>
-                       </ul>
-                       <ul>
-                           <li>Електронна пошта: <span>
-                               <a href="mailto:marig@gmail.com">marig@gmail.com</a></span>
-                           </li>
-                           <li>Місто: <span>Львів</span></li>
-                           <li>Телефон: <span><a href="tel:0986758943">098 675 89 43</a></span></li>
-                       </ul>
-                   </div>
-                   <div class="user">
-                      Таня Єногіна<br>
-                       <ul>
-                           <li><img src="img/user15.png"></li>
-                           <li class="text-center">
-                               <a href="https://vk.com" target="_blank">
-                                   <img src="img/userVk.png">
-                               </a>
-                               <a href="https://www.facebook.com" target="_blank">
-                                   <img src="img/userFb.png">
-                               </a>
-                           </li>
-                       </ul>
-                       <ul>
-                           <li>Електронна пошта: <span>
-                               <a href="mailto:taeno@gmail.com">taeno@gmail.com</a></span>
-                           </li>
-                           <li>Місто: <span>Львів</span></li>
-                           <li>Телефон: <span><a href="tel:0935675619">093 567 56 19</a></span></li>
-                       </ul>
-                   </div>
-                   <div class="user">
-                      Андрій Кукурін<br>
-                       <ul>
-                           <li><img src="img/user4.png"></li>
-                           <li class="text-center">
-                               <a href="https://vk.com" target="_blank">
-                                   <img src="img/userVk.png">
-                               </a>
-                               <a href="https://www.facebook.com" target="_blank">
-                                   <img src="img/userFb.png">
-                               </a>
-                           </li>
-                       </ul>
-                       <ul>
-                           <li>Електронна пошта: <span>
-                               <a href="mailto:andy@gmail.com">andy@gmail.com</span></a>
-                           </li>
-                           <li>Місто: <span>Дрогобич</span></li>
-                           <li>Телефон: <span><a href="tel:0934176710">093 417 67 10</a></span></li>
-                       </ul>
-                   </div>
-               </div>
-                  <div id="userPage2">
-                   <div class="user">
-                      Олена Караван<br>
-                       <ul>
-                           <li><img src="img/user5.png"></li>
-                           <li class="text-center">
-                               <a href="https://vk.com" target="_blank">
-                                   <img src="img/userVk.png">
-                               </a>
-                               <a href="https://www.facebook.com" target="_blank">
-                                   <img src="img/userFb.png">
-                               </a>
-                           </li>
-                       </ul>
-                       <ul>
-                           <li>Електронна пошта: <span>
-                               <a href="mailto:olekara@gmail.com">olekara@gmail.com</a></span>
-                           </li>
-                           <li>Місто: <span>Львів</span></li>
-                           <li>Телефон: <span><a href="tel:0938909856">093 890 98 56</a></span></li>
-                       </ul>
-                   </div>
-                   <div class="user">
-                      Іван Лідовський<br>
-                       <ul>
-                           <li><img src="img/user6.png"></li>
-                           <li class="text-center">
-                               <a href="https://vk.com" target="_blank">
-                                   <img src="img/userVk.png">
-                               </a>
-                               <a href="https://www.facebook.com" target="_blank">
-                                   <img src="img/userFb.png">
-                               </a>
-                           </li>
-                       </ul>
-                       <ul>
-                           <li>Електронна пошта: <span>
-                               <a href="mailto:ivanlido@gmail.com">ivanlido@gmail.com</a></span>
-                           </li>
-                           <li>Місто: <span>Львів</span></li>
-                           <li>Телефон: <span><a href="tel:0976573980">097 657 39 80</a></span></li>
-                       </ul>
-                   </div>
-                   <div class="user">
-                      Анна Грилько<br>
-                       <ul>
-                           <li><img src="img/user7.png"></li>
-                           <li class="text-center">
-                               <a href="https://vk.com" target="_blank">
-                                   <img src="img/userVk.png">
-                               </a>
-                               <a href="https://www.facebook.com" target="_blank">
-                                   <img src="img/userFb.png">
-                               </a>
-                           </li>
-                       </ul>
-                       <ul>
-                           <li>Електронна пошта: <span>
-                               <a href="mailto:annagril@gmail.com">annagril@gmail.com</a></span>
-                           </li>
-                           <li>Місто: <span>Самбір</span></li>
-                           <li>Телефон: <span><a href="tel:0968906578">096 890 65 78</a></span></li>
-                       </ul>
-                   </div>
-                   <div class="user">
-                      Роман Чекалюк<br>
-                       <ul>
-                           <li><img src="img/user8.png"></li>
-                           <li class="text-center">
-                               <a href="https://vk.com" target="_blank">
-                                   <img src="img/userVk.png">
-                               </a>
-                               <a href="https://www.facebook.com" target="_blank">
-                                   <img src="img/userFb.png">
-                               </a>
-                           </li>
-                       </ul>
-                       <ul>
-                           <li>Електронна пошта: <span>
-                               <a href="mailto:romache@gmail.com">romache@gmail.com</a></span>
-                           </li>
-                           <li>Місто: <span>Східниця</span></li>
-                           <li>Телефон: <span><a href="tel:0677641214">067 764 12 14</a></span></li>
-                       </ul>
-                   </div>
-                   <div class="user">
-                      Ліда Апанасюк<br>
-                       <ul>
-                           <li><img src="img/user9.png"></li>
-                           <li class="text-center">
-                               <a href="https://vk.com" target="_blank">
-                                   <img src="img/userVk.png">
-                               </a>
-                               <a href="https://www.facebook.com" target="_blank">
-                                   <img src="img/userFb.png">
-                               </a>
-                           </li>
-                       </ul>
-                       <ul>
-                           <li>Електронна пошта: <span>
-                               <a href="mailto:lidapa@gmail.com">lidapa@gmail.com</a></span>
-                           </li>
-                           <li>Місто: <span>Львів</span></li>
-                           <li>Телефон: <span><a href="tel:0935671010">093 567 10 10</a></span></li>
-                       </ul>
-                   </div>
-               </div>
-                  <div id="userPage3">
-                   <div class="user">
-                      Ольга Равіна<br>
-                       <ul>
-                           <li><img src="img/user10.png"></li>
-                           <li class="text-center">
-                               <a href="https://vk.com" target="_blank">
-                                   <img src="img/userVk.png">
-                               </a>
-                               <a href="https://www.facebook.com" target="_blank">
-                                   <img src="img/userFb.png">
-                               </a>
-                           </li>
-                       </ul>
-                       <ul>
-                           <li>Електронна пошта: <span>
-                               <a href="mailto:olalala@gmail.com">olalala@gmail.com</a></span></li>
-                           <li>Місто: <span>Львів</span></li>
-                           <li>Телефон: <span><a href="tel:0986753487">098 675 34 87</a></span></li>
-                       </ul>
-                   </div>
-                   <div class="user">
-                      Артур Казан<br>
-                       <ul>
-                           <li><img src="img/user11.png"></li>
-                           <li class="text-center">
-                               <a href="https://vk.com" target="_blank">
-                                   <img src="img/userVk.png">
-                               </a>
-                               <a href="https://www.facebook.com" target="_blank">
-                                   <img src="img/userFb.png">
-                               </a>
-                           </li>
-                       </ul>
-                       <ul>
-                           <li>Електронна пошта: <span>
-                               <a href="mailto:artua@gmail.com">artua@gmail.com</a></span>
-                           </li>
-                           <li>Місто: <span>Одеса</span></li>
-                           <li>Телефон: <span><a href="tel:09757534303">097 575 34 303</a></span></li>
-                       </ul>
-                   </div>
-                   <div class="user">
-                      Єва Лібідко<br>
-                       <ul>
-                           <li><img src="img/user12.png"></li>
-                           <li class="text-center">
-                               <a href="https://vk.com" target="_blank">
-                                   <img src="img/userVk.png">
-                               </a>
-                               <a href="https://www.facebook.com" target="_blank">
-                                   <img src="img/userFb.png">
-                               </a>
-                           </li>
-                       </ul>
-                       <ul>
-                           <li>Електронна пошта: <span>
-                               <a href="mailto:evali@gmail.com">evali@gmail.com</a></span>
-                           </li>
-                           <li>Місто: <span>Львів</span></li>
-                           <li>Телефон: <span><a href="tel:0936771090">093 677 10 90</a></span></li>
-                       </ul>
-                   </div>
-                   <div class="user">
-                      Данило Орлов<br>
-                       <ul>
-                           <li><img src="img/user14.png"></li>
-                           <li class="text-center">
-                               <a href="https://vk.com" target="_blank">
-                                   <img src="img/userVk.png">
-                               </a>
-                               <a href="https://www.facebook.com" target="_blank">
-                                   <img src="img/userFb.png">
-                               </a>
-                           </li>
-                       </ul>
-                       <ul>
-                           <li>Електронна пошта: <span>
-                               <a href="mailto:danorlov@gmail.com">danorlov@gmail.com</a></span></li>
-                           <li>Місто: <span>Львів</span></li>
-                           <li>Телефон: <span><a href="tel:0935764356">093 576 43 56</a></span></li>
-                       </ul>
-                   </div>
-                   <div class="user">
-                      Катя Єфімова<br>
-                       <ul>
-                           <li><img src="img/user13.png"></li>
-                           <li class="text-center">
-                               <a href="https://vk.com" target="_blank">
-                                   <img src="img/userVk.png">
-                               </a>
-                               <a href="https://www.facebook.com" target="_blank">
-                                   <img src="img/userFb.png">
-                               </a>
-                           </li>
-                       </ul>
-                       <ul>
-                           <li>Електронна пошта: <span>
-                               <a href="mailto:catcat@gmail.com">catcat@gmail.com</a></span>
-                           </li>
-                           <li>Місто: <span>Львів</span></li>
-                           <li>Телефон: <span><a href="tel:0935641890">093 564 18 90</a></span></li>
-                       </ul>
-                   </div>
-               </div>
-               <div class="container">
-                <div class="row">
-                   <div class="col-xs-12 text-centre pages">
-                        <ul>
-                            <li><a href="#" onclick="userPage1()">1</a></li>
-                            <li><a href="#" onclick="userPage2()">2</a></li>
-                            <li><a href="#" onclick="userPage3()">3</a></li>
-                        </ul>
-                   </div>
-                </div>
-            </div>
-       </div>
-    </div>
-</div>
         
         <div class="container" id="calendar">
             <div class="row">
@@ -397,8 +63,93 @@
             </div>
         </div>
     </div>
-        
-        <div class="container" id="forum">
+        <div class="container" id="friends" style="display:none">
+            <div class="row">
+               <div class="col-xs-12 text-centre">
+                   <div id="userPage1" ng-controller="UsersPage1Ctrl">
+                     <div class="user" ng-repeat="user in users">
+                      {{user.name}}<br>
+                       <ul>
+                           <li><img ng-src={{user.img}}></li>
+                           <li class="text-center">
+                               <a ng-href="https://vk.com/{{user.vk}}" target="_blank">
+                                   <img src="img/userVk.png">
+                               </a>
+                               <a href="https://www.facebook.com/{{user.fb}}" target="_blank">
+                                   <img src="img/userFb.png">
+                               </a>
+                           </li>
+                       </ul>
+                       <ul>
+                           <li>Електронна пошта: <span>
+                               <a href="mailto:{{user.email}}">{{user.email}}</a></span>
+                           </li>
+                           <li>Місто: <span>{{user.town}}</span></li>
+                           <li>Телефон: <span><a href="tel:{{user.tel}}">{{user.tel}}</a></span></li>
+                       </ul>
+                   </div>
+               </div>
+                   <div id="userPage2" ng-controller="UsersPage2Ctrl">
+                   <div class="user" ng-repeat="user in users">
+                      {{user.name}}<br>
+                       <ul>
+                           <li><img ng-src={{user.img}}></li>
+                           <li class="text-center">
+                               <a ng-href="https://vk.com/{{user.vk}}" target="_blank">
+                                   <img src="img/userVk.png">
+                               </a>
+                               <a href="https://www.facebook.com/{{user.fb}}" target="_blank">
+                                   <img src="img/userFb.png">
+                               </a>
+                           </li>
+                       </ul>
+                       <ul>
+                           <li>Електронна пошта: <span>
+                               <a href="mailto:{{user.email}}">{{user.email}}</a></span>
+                           </li>
+                           <li>Місто: <span>{{user.town}}</span></li>
+                           <li>Телефон: <span><a href="tel:{{user.tel}}">{{user.tel}}</a></span></li>
+                       </ul>
+                   </div>
+               </div>
+                   <div id="userPage3" ng-controller="UsersPage3Ctrl">
+                    <div class="user" ng-repeat="user in users">
+                      {{user.name}}<br>
+                       <ul>
+                           <li><img ng-src={{user.img}}></li>
+                           <li class="text-center">
+                               <a ng-href="https://vk.com/{{user.vk}}" target="_blank">
+                                   <img src="img/userVk.png">
+                               </a>
+                               <a href="https://www.facebook.com/{{user.fb}}" target="_blank">
+                                   <img src="img/userFb.png">
+                               </a>
+                           </li>
+                       </ul>
+                       <ul>
+                           <li>Електронна пошта: <span>
+                               <a href="mailto:{{user.email}}">{{user.email}}</a></span>
+                           </li>
+                           <li>Місто: <span>{{user.town}}</span></li>
+                           <li>Телефон: <span><a href="tel:{{user.tel}}">{{user.tel}}</a></span></li>
+                       </ul>
+                   </div>
+               </div>
+              </div>
+          </div>
+       <div class="container">
+            <div class="row">
+               <div class="col-xs-12 text-centre pages">
+                    <ul>
+                        <li><a href="#" onclick="userPage1()">1</a></li>
+                        <li><a href="#" onclick="userPage2()">2</a></li>
+                        <li><a href="#" onclick="userPage3()">3</a></li>
+                    </ul>
+               </div>
+            </div>
+        </div>
+    </div>    
+        <div class="container" id="forum" style="display:none">
 <!--
             <div class="row">
                <div class="col-xs-12 text-centre">
