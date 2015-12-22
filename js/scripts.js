@@ -197,3 +197,24 @@ $('#activeUser').click(function(){
     $('#activeUser').toggleClass('active');
     return false;
 	});
+
+$('#enter').keypress(function(e){
+    if(e.keyCode==13){
+var message = $('#enter').val();    
+$('#message').append(message);
+$('#addMessage').show();
+//        $('#enter').[0]reset();
+//       $('.chatBody').scrollTo('#addMessage', 1000, {axis:'y'});
+//        var height=$("chatBody").height(); 
+//$("chatBody").animate({"scrollTop": 1000}); 
+        
+        
+        setTimeout(function(){
+            $('#userWrite').show()}, 1000);
+        setTimeout(function(){
+            $('#userWrite').hide()}, 3000);        
+        setTimeout(function(){
+            $('#message2').show()}, 3300);
+    
+    
+    }});
