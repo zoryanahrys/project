@@ -112,33 +112,31 @@ header{
 //*** Chat ***
     
 .message {
-    
+    width: 50%;
     margin-bottom: 1em;
+    height: auto;
     
     li{
         img{
-            width: 25%;
+            width: 35%;
         }
         &:first-child{
             text-align: left;
-            padding-right: 0.1em;
+            padding-left: 1em;
         }
         
         &:last-child{
-            
-            width: 70%;
-            padding: 0.2em;
-            
+            width: 140%;
+            padding-top: 0.2em;
             top: 0.5em;
-            font-size: 0.7em;
-//            line-height: em;
-            
+            font-size: 0.6em;
+            line-height: 1em;
         }
     }
 }
 
 .chat {
-    line-height: 1.5em;
+    line-height: 1em;
     margin: 1em 0 2em;
     
     
@@ -149,15 +147,8 @@ header{
     }
     
     p{
-       text-align: center; 
-       
        font-size: 0.7em;
     
-    }
-    
-    hr{
-        
-        
     }
     
     textarea{
@@ -183,16 +174,11 @@ header{
 .chatBody {
     
     height: 25em;
-    padding: 0 0 1em;
+    padding: 0 1em 1em;
 }
 
 .toggle {
-    width: 100%;
-    height: 2em;
-    
-    margin-bottom: 2em;
-    padding-left: 54em;
-    padding-top: 0.4em;
+    padding-left: 12em;
 }
     
     
@@ -262,6 +248,27 @@ header{
     }
 }
     
+.message {
+    li{
+        
+        &:last-child{
+            margin-left: -6em;
+            font-size: 0.8em;
+        }
+    }
+}
+
+.chat{
+    textarea{
+        width: 27em;
+        font-size: 0.9em;
+    }
+}
+
+.toggle {
+    padding-left: 21em;
+}    
+    
 }
 
 @media screen and (min-width: 640px) and (max-width: 1050px){
@@ -329,6 +336,26 @@ header{
     }
 }
     
+.message {
+    li{
+        img{
+            margin-left: -5em;
+            width: 90%;
+        }
+    }
+}
+
+.chat{
+    textarea{
+        width: 37em;
+    }
+}
+
+.toggle {
+    padding-left: 30em;
+}        
+    
+    
 }
 
 @media screen and (min-width: 768px) and (max-width: 1050px){
@@ -393,7 +420,32 @@ header{
     top: 4em;
 }
     
+ .message {
+    li{
+        
+        &:last-child{
+            margin-left: 0;
+            font-size: 0.8em;
+            width: 85%;
+        }
+    }
+}
+
+.chat{
+    textarea{
+        width: 34em;
+        font-size: 0.9em;
+    }
+}
+
+.toggle {
+    padding-left: 28em;
+}    
     
+.chatBody {
+    
+    height: 20em;
+}    
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1050px){  
@@ -443,7 +495,31 @@ header{
         }
     }
     
-}       
+}
+    
+ .message {
+    li{
+        img{
+            width: 100%;
+        }
+    }
+}
+
+.chat{
+    textarea{
+        width: 46em;
+    }
+}
+
+.toggle {
+    padding-left: 39em;
+}    
+    
+.chatBody {
+    height: 22em;
+}    
+    
+    
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1300px){
@@ -462,6 +538,16 @@ header{
     right: 11.9em;
 }
 
+.chat{
+    textarea{
+        width: 58em;
+        font-size: 0.9em;
+    }
+}
+
+.toggle {
+    padding-left: 50em;
+}    
 }
 
 
