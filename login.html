@@ -24,13 +24,21 @@
                     <span>ABC</span> theatre
                     <img id="activeUser" src="img/loginPhoto.png">
                </div>
+               <div id="userProfileMenu" style="display: none">
+                   <ul>
+                       <li><a href="#">Мій профіль</a></li>
+                       <li><a href="#">Змінити аватар</a></li>
+                       <li><a href="page.html">Вийти</a></li>
+                   </ul>
+                   
+               </div>
             </div>
                <div class="row">
                <div class="col-xs-12 text-centre menu">
                    <ul>
-                       <li><a href="#" onclick="calendar()">Розклад</a></li>
-                       <li><a href="#" onclick="friends()">Друзі</a></li>
-                       <li><a href="#" onclick="forum()">Форум</a></li>
+                       <li id="calendarLink" class="activeLink"><span>Розклад</span></li>
+                       <li id="forumLink"><span>Чат</span></li>
+                       <li id="friendsLink"><span>Друзі</span></li>
                    </ul>
                </div>
             </div>
@@ -150,19 +158,11 @@
         </div>
     </div>    
         <div class="container" id="forum" style="display:none">
-<!--
             <div class="row">
                <div class="col-xs-12 text-centre">
-               
-               <p>Write smth</p>
-                <form id="publish" class="form-inline">
-                    <input type="text" name="message">
-                    <input type="submit" class="btn btn-primary" value="send">
-                </form>
-                <ul id="messages"></ul>
                </div>
             </div>
--->
+            
         </div>
 
     

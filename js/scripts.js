@@ -55,24 +55,32 @@ function mail (e){
 
 // **** personal office - menu****
 
-function calendar(){
+$('#calendarLink').click(function (){
      $('#friends').hide();
      $('#forum').hide();
      $('#calendar').show();
-}
+     $('#calendarLink').addClass('activeLink');
+     $('#friendsLink').removeClass('activeLink');
+     $('#forumLink').removeClass('activeLink');
+});
 
-function friends(){
+$('#friendsLink').click(function (){
      $('#friends').show();
      $('#forum').hide();
      $('#calendar').hide();
-}
+     $('#calendarLink').removeClass('activeLink');
+     $('#friendsLink').addClass('activeLink');
+     $('#forumLink').removeClass('activeLink');
+});
 
-function forum(){
+$('#forumLink').click(function (){
      $('#friends').hide();
      $('#forum').show();
      $('#calendar').hide();
-}
-
+     $('#calendarLink').removeClass('activeLink');
+     $('#friendsLink').removeClass('activeLink');
+     $('#forumLink').addClass('activeLink');
+});
 
 /// ****User pages****
 
@@ -159,10 +167,8 @@ function checkParams() {
        $('#firstName').val().length !=0 && 
        $('#inputEmail').val().length !=0 && 
        $('#phoneNumber').val().length !=0 && 
-       $('#postalAddress').val().length !=0
-       
-//      $('input [name="coursesRadios"]:checked').val() 
-//      $('input[name="agree"]').filter(":checked").val()
+       $('#postalAddress').val().length !=0 &&
+       $('#agree').is(':checked')
     ){
         $('#registrationBtn').removeAttr('disabled');
     } else {
@@ -182,8 +188,12 @@ function registrationOk(){
     });
 };
 
-
-
  $(document).ready(function() { 
     $("a.fancyimage").fancybox(); 
   }); 
+
+$('#activeUser').click(function(){
+	$('#userProfileMenu').toggle('slow');
+    $('#activeUser').toggleClass('active');
+    return false;
+	});

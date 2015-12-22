@@ -38,16 +38,22 @@ header{
     
     img{
         float: right;
+        cursor: pointer;
         margin-right: -5em;
         margin-top: -0.5em;
         border-radius: 50%;
-        border: 2px solid @darkgrey;
+        border: 0.15em solid @darkgrey;
         
         &:hover{
-            border: 2px solid @red;
+            border: 0.15em solid @red;
         }
     }
 }
+
+
+.active{
+    border: 0.15em solid @red;
+        }
 
 .logo{ 
     .abc-theatre;
@@ -63,38 +69,38 @@ header{
         
         li{
             float: left;
-            font-size: 1.3em;
-            margin: 0 3em;
-            width: 5em;
+            width: 6.7em;
+            font-size: 1.2em;
+            text-transform: uppercase;
+            margin: 0 2.5em;
             text-align: center;
             border-bottom: 0.1em solid @darkgrey;
             border-top: 0.1em solid @darkgrey;
             padding: 0.3em 0;
             font-weight: bold;
-            
-            
-            a{
-                color: @darkgrey;
-                text-decoration: none;
-            
-                    &:hover{
-                        color: @red;
-                    }
-            }
+            cursor: pointer;
+            color: @darkgrey;  
             
         }
             
     }
 }
 
-
+.activeLink{
+    
+    span{
+        font-size: 1.3em;
+        color: @red;
+    }
+}
 //**** Calendar ****
 
 
 #calendar {
     text-align: center;
     padding-right: 3.5em;
-    font-size: 1.2em;
+    font-size: 1.1em;
+    text-transform: uppercase;
     
     table{
         margin: 1em 0;
@@ -255,3 +261,93 @@ header{
         }
     }
 }
+
+#userProfileMenu {
+    position: absolute;
+    right: 12.5em;
+    top: 4em;
+    width: 8em;
+    height: auto;
+    display: block;
+    background-color: @grey;
+    border-radius: 5%;
+    z-index: 9999;
+    
+    ul{
+        line-height: 1.8em;
+        font-size: 0.8em;
+        font-weight: bold;
+        
+        li{
+            text-align: center;
+            border: 1px solid white;
+            padding: 0.2em;
+            
+            
+            a{
+                text-decoration: none;
+                color: @darkgrey;
+                
+            }
+            
+            &:hover{
+                    background-color: @red;
+                    
+                a{
+                    color: white;
+                }
+                
+            }
+        } 
+    }
+}
+
+
+
+.day1, .day3, .day5, .day8, .day10, .day12, .day15, .day17, .day19, .day22, .day24, .day26, .day29, .day31{
+    position: relative;
+    width: 13%;
+    cursor: pointer;
+    
+    &:hover{
+        
+        img:last-child{
+            display: block;
+        }
+    
+    }
+    
+    img:first-child{
+        position: absolute;
+        top:70%;
+        right: 0;
+        width:20%;
+        }
+    img:last-child{
+        position: absolute;
+        right: 1.2em;
+        top: 0.1em;
+        width:48%;
+        display: none;
+    }
+
+}
+
+.day2, .day4, .day6, .day7, .day9, .day11, .day13, .day14, .day16, .day18, .day20, .day21, .day23, .day25, .day27,.day28, .day30{
+    width: 13%;
+    
+    img:first-child{
+        display: none;
+    }
+    
+    img:last-child{
+        position: absolute;
+        right: 1.2em;
+        top: 0.1em;
+        display: none;
+        width:48%;
+        
+    }
+}
+
+@import "mediaLogin.less";
