@@ -441,6 +441,13 @@ header{
 
 
 .onoffswitch {
+    position: relative;
+    img{
+        position: absolute;
+        right: 3em;
+        top: 0.1em;
+    }
+    
     position: relative; 
     width: 43px;
     -webkit-user-select:none; 
@@ -478,7 +485,7 @@ header{
 .onoffswitch-inner:before {
     content: "";
     padding-left: 10px;
-    background-color: #EB504F; 
+    background-color: #00DD3C; 
     color: #FFFFFF;
 }
 .onoffswitch-inner:after {
@@ -494,7 +501,8 @@ header{
     margin: 3px;
     background: #FFFFFF;
     position: absolute; 
-    top: 0; bottom: 0;
+    top: 0; 
+    bottom: 0;
     right: 25px;
     border: 2px solid #999999; 
     border-radius: 20px;

@@ -126,41 +126,10 @@ $('#login').click(function(){
 
 $('#users').click(function(){
     if( $('#useremail').val().length>0 && $('#password').val().length>0){
-        
-//        if($('#email').val()==='user1@gmail.com' && $('#password').val() === 'user'){
-//            return true
-//        } else{
-//            return true
-//        }
     } else{
         return false;
     }
 });
-//var users = [
-//    
-//    user1 = {
-//    
-//    name: 'Світлана',
-//    email: 'svitla@gmail.com',
-//    password: 'user'
-//},
-//
-//    user2 = {
-//        name: 'Оксана',
-//        email: 'oksi@gmail.com',
-//        password: 'user'
-//    },
-//
-//    user3 = {
-//        name: 'Марія',
-//        email: 'marig@gmail.com',
-//        password: 'user'
-//    }
-//];
-
-
-//
-
 
 function checkParams() {
     if( $('#lastName').val().length !=0 && 
@@ -220,3 +189,7 @@ $(".chatBody").animate({"scrollTop": 1000});
         
             $(".chatBody").animate({"scrollTop": 2000});
     }});
+
+function speaker() {
+        $('#speakerImg').toggle(200);
+};
